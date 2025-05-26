@@ -28,12 +28,7 @@ Durante el desarrollo se utilizaron tecnologías y herramientas básicas para co
 
 - Diseño responsive para visualización correcta en dispositivos móviles y de escritorio.
 
-- Uso de una paleta de colores específica para reflejar el estilo artesanal y sofisticado:  
-  - Beige suave (#EEE0CB)  
-  - Marrón claro (#BAA898)  
-  - Gris (#848586)  
-  - Marrón suave (#C2847A)  
-  - Rojo oscuro (#280003)
+- Uso de una paleta de colores específica para reflejar el estilo artesanal y sofisticado.
 
 - Tipografía amigable y elegante para una imagen profesional y cercana.
 
