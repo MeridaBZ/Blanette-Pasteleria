@@ -1,0 +1,148 @@
+{
+    "Productos": [
+        {
+            "id": 1,
+            "title": "Choco Oreo",
+            "description": "Torta artesanal con base de chocolate y crema oreo",
+            "price": 43200,
+            "originalPrice": 54000,
+            "discount": 20,
+            "image": "/media/images/productos/chocooreo.png"
+        },
+        {
+            "id": 2,
+            "title": "Marquisse",
+            "description": "Delicada torta marquisse de chocolate con dulce de leche",
+            "price": 41600,
+            "originalPrice": 52000,
+            "discount": 20,
+            "image": "/media/images/productos/marquise.png"
+        },
+        {
+            "id": 3,
+            "title": "Nutella",
+            "description": "Cheesecake cremoso con cobertura de Nutella",
+            "price": 52800,
+            "originalPrice": 63000,
+            "discount": 20,
+            "image": "/media/images/productos/cheesecake-nutella.png"
+        },
+        {
+            "id": 4,
+            "title": "Frutilla",
+            "description": "Cheesecake suave con topping de frutillas naturales",
+            "price": 52800,
+            "originalPrice": 63000,
+            "discount": 20,
+            "image": "/media/images/productos/frutilla.png"
+        },
+        {
+            "id": 5,
+            "title": "Bon o bon",
+            "description": "Torta inspirada en el clásico bombón Bon o Bon",
+            "price": 52000,
+            "image": "/media/images/productos/bonobon.png"
+        },
+        {
+            "id": 6,
+            "title": "Cheesecake DDL",
+            "description": "Cheesecake con base crocante y dulce de leche",
+            "price": 54000,
+            "image": "/media/images/productos/cheesecake-dulcedeleche.png"
+        },
+        {
+            "id": 7,
+            "title": "Cheesecake NY",
+            "description": "Receta clásica al estilo New York, cremoso y suave",
+            "price": 54000,
+            "image": "/media/images/productos/cheesecake-newyork.png"
+        },
+        {
+            "id": 8,
+            "title": "Doble Oreo",
+            "description": "Torta con doble capa de crema de Oreo y chocolate",
+            "price": 58000,
+            "image": "/media/images/productos/dobleoreo.png"
+        },
+        {
+            "id": 9,
+            "title": "Pavlova",
+            "description": "Delicada pavlova con frutas frescas y crema chantilly",
+            "price": 63000,
+            "image": "/media/images/productos/pavlova.png"
+        },
+        {
+            "id": 10,
+            "title": "Rogel",
+            "description": "Capas finas y crocantes con abundante dulce de leche",
+            "price": 52000,
+            "image": "/media/images/productos/rogel.png"
+        },
+        {
+            "id": 11,
+            "title": "Lemon pie",
+            "description": "Tarta de limón con merengue italiano flameado",
+            "price": 53000,
+            "image": "/media/images/productos/lemonpie.png"
+        },
+        {
+            "id": 12,
+            "title": "Chocotorta",
+            "description": "Clásica chocotorta argentina, ideal para compartir",
+            "price": 55000,
+            "image": "/media/images/productos/chocotorta.png"
+        }
+    ],
+    "Recetas": [
+        {
+            "id": 101,
+            "title": "Navidad",
+            "description": "Recetario digital especial para las fiestas",
+            "price": 10735,
+            "originalPrice": 11300,
+            "discount": 5,
+            "image": "/media/images/productos/recetasnavidad.png"
+        },
+        {
+            "id": 102,
+            "title": "Cookies NY",
+            "description": "Recetario para hacer las clásicas galletas estilo Nueva York",
+            "price": 18905,
+            "originalPrice": 19900,
+            "discount": 5,
+            "image": "/media/images/productos/recetascookies.png"
+        },
+        {
+            "id": 103,
+            "title": "Shots",
+            "description": "Recetas de postres en vasito individuales y prácticos",
+            "price": 11685,
+            "originalPrice": 12300,
+            "discount": 5,
+            "image": "/media/images/productos/recetashots.png"
+        },
+        {
+            "id": 104,
+            "title": "Pascuas",
+            "description": "Especial de recetas para preparar en Semana Santa",
+            "price": 10335,
+            "originalPrice": 10900,
+            "discount": 5,
+            "image": "/media/images/productos/recetaspascuas.png"
+        },
+        {
+            "id": 105,
+            "title": "Tortas Heladas",
+            "description": "Recetario digital con ideas para tortas frías y frescas",
+            "price": 10735,
+            "image": "/media/images/productos/recetastortas.png"
+        },
+        {
+            "id": 106,
+            "title": "Box Blanette",
+            "description": "Pack de recetas exclusivas de Blanette en PDF",
+            "price": 18905,
+            "image": "/media/images/productos/recetasbox.png"
+        }
+    ]
+}

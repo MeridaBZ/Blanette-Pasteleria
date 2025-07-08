@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pastelería artesanal con productos únicos - By Blanette.">
+    <meta name="keywords" content="pastelería, tortas, postres, recetas, artesanal, Blanette">
+    <meta name="author" content="Mariana Blanez">
     <title>Recetarios | By Blanette</title>
     <!-- LOGO -->
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
@@ -12,17 +15,28 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap"
         rel="stylesheet">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="/index.html">Inicio</a></li>
                 <li><a href="/index.html#sobre-nosotros">Sobre Nosotros</a></li>
                 <li><a href="/pages/products.html">Productos</a></li>
                 <li><a href="/pages/recipes.html">Recetarios</a></li>
                 <li><a href="/pages/contact.html">Contacto</a></li>
+                <li>
+                    <button id="open-cart" class="cart-link" aria-label="Abrir carrito">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -41,99 +55,32 @@
             </div>
         </section>
         <section id="productos">
-            <!-- CARDS -->
-            <section class="cardProduct">
-                <article class="products">
-                        <div class="imgBox">
-                            <img src="/media/images/productos/recetasnavidad.png" alt="RecetarioNavidad"
-                                class="itemOferta" />
-                        </div>
-                        <div class="DatosBox">
-                            <h4>Navidad</h4>
-                            <div class="descard">
-                                <small>$11300.00</small>
-                                <h4>5%</h4>
-                            </div>
-                            <h2 class="price">$10735.00</h2>
-                            <a href="#" class="comprar">Comprar</a>
-                        </div>
-                </article>
-                <article class="products">
-                        <div class="imgBox">
-                            <img src="/media/images/productos/recetascookies.png" alt="RecetarioCookiesNY"
-                                class="itemOferta" />
-                        </div>
-                        <div class="DatosBox">
-                            <h4>Cookies NY</h4>
-                            <div class="descard">
-                                <small>$19900.00</small>
-                                <h4>5%</h4>
-                            </div>
-                            <h2 class="price">$18905.00</h2>
-                            <a href="#" class="comprar">Comprar</a>
-                        </div>
-                </article>
-                <article class="products">
-                        <div class="imgBox">
-                            <img src="/media/images/productos/recetashots.png" alt="RecetarioShots"
-                                class="itemOferta" />
-                        </div>
-                        <div class="DatosBox">
-                            <h4>Shots</h4>
-                            <div class="descard">
-                                <small>$12300.00</small>
-                                <h4>5%</h4>
-                            </div>
-                            <h2 class="price">$11685.00</h2>
-                            <a href="#" class="comprar">Comprar</a>
-                        </div>
-                </article>
-                <article class="products">
-                        <div class="imgBox">
-                            <img src="/media/images/productos/recetaspascuas.png" alt="RecetarioPascuas"
-                                class="itemOferta" />
-                        </div>
-                        <div class="DatosBox">
-                            <h4>Pascuas</h4>
-                            <div class="descard">
-                                <small>$10900.00</small>
-                                <h4>5%</h4>
-                            </div>
-                            <h2 class="price">$10335.00</h2>
-                            <a href="#" class="comprar">Comprar</a>
-                        </div>
-                </article>
-                <article class="products">
-                        <div class="imgBox">
-                            <img src="/media/images/productos/recetastortas.png" alt="Recetariotortas"
-                                class="itemOferta" />
-                        </div>
-                        <div class="DatosBox">
-                            <h4>Tortas Heladas</h4>
-                            <div class="descard"></div>
-                            <h2 class="price">$10735.00</h2>
-                            <a href="#" class="comprar">Comprar</a>
-                        </div>
-                </article>
-                <article class="products">
-                        <div class="imgBox">
-                            <img src="/media/images/productos/recetasbox.png" alt="RecetarioBoxBlanette"
-                                class="itemOferta" />
-                        </div>
-                        <div class="DatosBox">
-                            <h4>Box Blanette</h4>
-                            <div class="descard"></div>
-                            <h2 class="price">$18905.00</h2>
-                            <a href="#" class="comprar">Comprar</a>
-                        </div>
-                </article>
-            </section>
+            <h1>Todos nuestros recetarios</h1>
+            <section class="cardProduct recetas-container"></section>
         </section>
-    </main>
 
+        <div id="cart-sidebar" class="cart-sidebar">
+            <div class="cart-header">
+                <h2>Tu carrito</h2>
+                <button id="close-cart" class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                
+                <p class="empty-cart">Tu carrito está vacío.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">$0.00</span>
+                </div>
+                <button class="checkout-btn" disabled>Finalizar compra</button>
+            </div>
+        </div>
+    </main>
+    <!-- script JS -->
+    <script src="../js/script.js"></script>
     <footer>
         <p><small>&copy; 2025 Mariana Blanez By Blanette | Todos los derechos reservados.</small></p>
     </footer>
-</body>
 
 </html>
